@@ -1,0 +1,99 @@
+body {
+    background: black;
+}
+ul {
+    list-style: none;
+}
+nav {
+    background: rgb(38, 42, 38);
+    padding: 20px;
+    border-bottom: 3px solid white;
+    margin-top: 200px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5em;
+    margin-top: 30px;
+}
+.first-item {
+    color: white;
+    font-size: 36px;
+    
+}
+.second-item {
+    color: white;
+    font-size: 24px;
+}
+.third-item {
+    color: gray;
+    font-size: 24px;
+}
+.dropdown > select {
+    color: gray;
+    font-size: 24px;
+    background: rgb(38, 42, 38);
+    border: none;  
+}
+.menu {
+    display: none;
+}
+
+.search-button {
+    color: rgb(35, 113, 35);
+    border: 2px solid rgb(35, 113, 35);
+    background: rgb(38, 42, 38);
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.search-button:hover {
+    color: white;
+    background: green;
+}
+.search-area {
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.search-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.disabled-button > button {
+    background: rgb(38, 42, 38);
+    color: rgb(86, 86, 86);
+    font-size: 16px;
+    padding: 10px;
+    border: 0ch;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+       flex-direction: column(1fr); 
+    }
+    .second-item,
+    .third-item,
+    .dropdown,
+    .disabled-button,
+    .search-section {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
